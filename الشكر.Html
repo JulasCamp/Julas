@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكرًا على الحجز</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family');
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #e3e3e3;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            animation: slideUp 1s ease forwards;
+            animation-delay: 1s;
+            transform: translateY(50px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+          /* حركات */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .logo img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .thanks {
+            line-height: 1.5;
+            color: #ffffffe8;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="imag/LOGO.jpg" alt="Logo">
+    </div>
+    <div class="thanks">
+        <h1>شكرًا على الحجز</h1>
+        <p>تمت معالجة طلب الحجز بنجاح<br>يمكنك الدفع عن طريق رقم الهاتف الرجاء إرسال الإيصال على رقم الهاتف لتأكيد
+            الحجز.
+        </p>
+    </div>
+</body>
+
+</html>

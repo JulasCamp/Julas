@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الاتصال</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            direction: rtl; /* اتجاه النصوص من اليمين لليسار */
+        }
+
+        .back-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .back-icon svg {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+            fill: white;
+            transform: scaleX(-1);
+        }
+
+        .contact-details {
+            text-align: center; /* ترتيب النص في الوسط */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #222;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease forwards; /* إضافة حركة الفيد ان */
+        }
+
+        .contact-details h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-details p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .contact-details p.emoji {
+            font-size: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* حركات */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- أيقونة التراجع إلى الصفحة الرئيسية -->
+    <a href="الصفحة الرئيسية.html" class="back-icon">
+        <!-- رمز SVG للسهم إلى اليمين -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 19l-7-7 7-7v4h8v6h-8v4z" />
+        </svg>
+    </a>
+    <div class="contact-details">
+        <h1>تفاصيل الاتصال</h1>
+        <p>معسكر جُلاس</p>
+        <p class="emoji">✉️ البريد الإلكتروني: <a href="mailto:julascamp@gmail.com">julascamp@gmail.com</a></p>
+        <p class="emoji">📞 الهاتف: <a href="tel:96894100189">94100189</a></p>
+        <p class="emoji">📍 العنوان: حي عرفه، صحار، عمان</p>
+        <p class="emoji">⏱ الساعات: مفتوح 24 ساعة</p>
+    </div>
+</body>
+
+</html>

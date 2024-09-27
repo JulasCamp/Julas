@@ -1,0 +1,237 @@
+<!--
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شروط وأحكام الحجز</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            text-align: right;
+            position: relative;
+        }
+        .modal-content h1 {
+            color: green;
+        }
+        .modal-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .modal-content ul li {
+            margin-bottom: 10px;
+        }
+        .close-btn, .agree-btn {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .close-btn {
+            background-color: red;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+-->
+<!-- زر الحجز 
+<button id="booking-btn">احجز الآن</button>
+
+<!-- النافذة المنبثقة 
+<div id="termsModal" class="modal">
+    <div class="modal-content"
+        <h1>حي الله من أحيانا! | حي من زارنا | حيه</h1>
+        <p>لضمان تجربة مثالية في مخيم جُلاس نوصيكم بالتالي:</p>
+        <ul>
+            <li>يمكنك اجراء الحجز باستخدام نظام الحجز عبر الإنترنت، أو عبر أي وسيلة أخرى، مثل مركز الاتصال خاصتنا.</li>
+            <li>لضمان الحجز تحتاج إلى سداد مبلغ الحجز كاملاً على حسب السعر المعمول به.</li>
+            <li>يتحمل العميل المسؤولية عن أي شكل من أشكال الإصابة الشخصية أو الخسارة أو الضرر أو الوفاة خلال فترة حجزه.</li>
+            <li>لا يتحمل مخيم جُلاس أي مسؤولية اتجاهك أو اتجاه أي من زوارك عن أي خسائر أو تلفيات تلحق بالممتلكات نتيجة لسوء التصرف أو الإهمال من جانبه أو جانب نزيل آخر ويتحمل العميل دفع قيمة الممتلكات المتضررة بالكامل.</li>
+            <li>إذا اعتبر أي بند من بنود هذه الأحكام والشروط غير قانوني أو لاغيًا أو باطلاً أو غير قابل للتنفيذ لأي سبب آخر، يعتبر هذا البند مقتطعًا من هذه الشروط والأحكام دون أن يؤثر ذلك في صحة ونفاذ أي من البنود الأخرى.</li>
+        </ul>
+        <h2>يهمنا الوقت وتهمنا سعادتكم</h2>
+        <ul>
+            <li>حرصا من إدارة جُلاس على تقديم تجربة مميزة، يرجى الالتزام بموعد الحجز المحدد والحضور في الوقت المناسب، حيث أن جدول الأوقات يعمل وفق نظام والية محددة.</li>
+            <li>لك حرية التعديل على الحجز وتغيير وقته وتاريخه بعد ٤ ساعات فقط من عملية الدفع.</li>
+        </ul>
+        <p>إذا كان لديك أي استفسارات أو شكاوى، يُرجى التواصل معنا على عنوان البريد الإلكتروني julascamp@gmail.com أو رقم الهاتف:4100189 +968 9</p>
+        
+        <div class="buttons">
+            <label>
+                <input type="checkbox" id="agree-checkbox"> قرأت واوافق على الشروط والأحكام
+            </label><br><br>
+            <button class="close-btn">إلغاء</button>
+            <button class="agree-btn" id="agree-btn" disabled>موافقة</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // عرض النافذة المنبثقة عند الضغط على زر الحجز
+    const modal = document.getElementById('termsModal');
+    const bookingBtn = document.getElementById('booking-btn');
+    const agreeBtn = document.getElementById('agree-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const agreeCheckbox = document.getElementById('agree-checkbox');
+
+    bookingBtn.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+
+    // إغلاق النافذة عند الضغط على زر إلغاء
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // تمكين زر الموافقة عند الموافقة على الشروط
+    agreeCheckbox.addEventListener('change', () => {
+        agreeBtn.disabled = !agreeCheckbox.checked;
+    });
+
+    // تنفيذ الحجز عند الضغط على موافقة
+    agreeBtn.addEventListener('click', () => {
+        alert('تمت الموافقة على الشروط. سيتم تنفيذ الحجز الآن.');
+        modal.style.display = 'none';
+        // هنا يمكنك تنفيذ عملية الحجز
+    });
+</script>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <style>
+        /* أنماط النافذة المنبثقة */
+        .modal {
+            display: none;
+            /* اجعلها مخفية افتراضيًا */
+            position: fixed;
+            /* اجعلها ثابتة */
+            z-index: 1;
+            /* اجعلها فوق كل العناصر */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* عرض كامل */
+            height: 100%;
+            /* ارتفاع كامل */
+            overflow: auto;
+            /* تفعيل التمرير إذا لزم الأمر */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* خلفية مظللة */
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            /* المركز العمودي */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* عرض 80% */
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            /* لمحاذاة زر الإغلاق إلى اليمين */
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            /* تغيير اللون عند التمرير فوقه */
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- زر لفتح نافذة الشروط والقوانين -->
+    <button id="termsButton">اطلع على الشروط والقوانين</button>
+
+    <!-- نافذة الشروط والقوانين -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>شروط وقوانين الحجز</h2>
+            <p>هنا تضع شروطك وقوانين الحجز...</p>
+            <!-- يمكنك إضافة المزيد من النصوص أو المعلومات هنا -->
+        </div>
+    </div>
+
+    <!-- Checkbox للموافقة على الشروط -->
+    <div class="checkbox-container">
+        <input type="checkbox" id="termsCheckbox" onchange="toggleBookingButton()">
+        <label for="termsCheckbox">أوافق على الشروط والقوانين</label>
+    </div>
+
+    <!-- زر الحجز -->
+    <button id="bookingButton" disabled>احجز الآن</button>
+
+    <script>
+        // فتح نافذة الشروط والقوانين
+        const termsButton = document.getElementById("termsButton");
+        const termsModal = document.getElementById("termsModal");
+        const closeButton = document.querySelector(".close-button");
+
+        termsButton.onclick = function () {
+            termsModal.style.display = "block"; // عرض النافذة
+        }
+
+        // إغلاق النافذة عند الضغط على زر الإغلاق
+        closeButton.onclick = function () {
+            termsModal.style.display = "none"; // إخفاء النافذة
+        }
+
+        // إغلاق النافذة عند الضغط في أي مكان خارجها
+        window.onclick = function (event) {
+            if (event.target == termsModal) {
+                termsModal.style.display = "none"; // إخفاء النافذة
+            }
+        }
+
+        // تفعيل أو تعطيل زر الحجز بناءً على حالة مربع الاختيار
+        function toggleBookingButton() {
+            const checkbox = document.getElementById("termsCheckbox");
+            const bookingButton = document.getElementById("bookingButton");
+            bookingButton.disabled = !checkbox.checked; // تفعيل الزر إذا تم تحديد مربع الاختيار
+        }
+
+    </script>
+
+</body>
+
+</html>
