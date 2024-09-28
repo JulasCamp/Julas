@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكرًا على الحجز</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #e3e3e3;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            animation: slideUp 1s ease forwards;
+            animation-delay: 1s;
+            transform: translateY(50px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #00bfff;
+        }
+
+        /* الحركات */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffffffe8;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #ffffffe8;
+        }
+
+        .logo img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .thanks {
+            line-height: 1.8;
+            color: #ffffffe8;
+            font-size: small;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="imag/LOGO.jpg" alt="Logo">
+    </div>
+
+    <div class="thanks">
+        <h1>شكرًا على حجزك في مخيم جُلاس</h1>
+        <p>نحييكم من مخيم جُلاس، مخيم ريفي فاخر في صحار. نود أن نشكرك على ثقتك بنا.</p>
+        <p>يرجى الدفع من خلال قنوات الدفع الرقمية التالية خلال ساعة واحدة:</p>
+        <ul>
+            <li>بنك مسقط - رقم الحساب: <strong>0045044328230035</strong></li>
+            <li>رقم الهاتف للدفع: <a href="tel:+96894100189">+96894100189</a></li>
+        </ul>
+        <p>إذا كان لديك أي استفسارات، لا تتردد في الاتصال بنا على الرقم: <a href="tel:+96894100189">+96894100189</a>.</p>
+        <p>شكرًا لاختيارك <strong>مخيم جُلاس</strong>، ونتطلع إلى استضافتك قريبًا!</p>
+    </div>
+</body>
+
+</html>
