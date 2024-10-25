@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logwthout9.png" type="image/x-icon" clip-path="circle(50% at 50% 50%)">
+    <title>Home Page</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="imag/LOGO.jpg" alt="Logo" width="300px">
+            <h1 id="site-name">Rural Luxury</h1>
+        </div>
+
+        <h2 class="description">
+            Rural luxury in every moment <span>#Julas </span>
+        </h2>
+
+        <div class="button-container">
+            <a href="bookPage.html" class="element">Book Now</a>
+            <a href="https://menux.app/julas-camp/" class="element">Food and Restaurant Menus</a>
+            <a href="julas-special.html" class="element"> Julas Special</a>
+            <a href="contact-details.html" class="element">Contact Details</a>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="wrapper">
+            <div class="option">
+                <input checked="" value="option1" name="btn" type="radio" class="input" id="english" onclick="navigateToPage('HomePage.html')"/>
+                <div class="btn">
+                    <span class="span">English</span>
+                </div>
+            </div>
+            <div class="option">
+                <input checked="" value="option2" name="btn" type="radio" class="input" id="arabic" onclick="navigateToPage('الصفحة الرئيسية.html')"/>
+                <div class="btn">
+                    <span class="span"> Arabic</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function navigateToPage(url) {
+            window.location.href = url;
+        }
+
+        
+    </script>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tajawal:wght@400;500;700&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', 'Tajawal', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* لضبط المحتوى في المنتصف أفقيًا */
+    align-items: center;
+    /* لضبط المحتوى في المنتصف عموديًا */
+    height: 100vh;
+    /* عرض الصفحة بالكامل */
+    margin: 0;
+    /* إزالة الهامش الافتراضي */
+    background-color: #000000;
+    /* خلفية الصفحة */
+    color: #bebfc5;
+    /* لون النص */
+
+}
+
+.container {
+    text-align: center;
+    /* محاذاة النص في الوسط */
+    background-color: #000000;
+    /* خلفية المحتوى */
+    padding: 20px;
+    /* إضافة حشوة حول المحتوى */
+    border-radius: 10px;
+    /* زوايا دائرية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* ظل */
+
+
+}
+
+.logo {
+    font-size: 30px;
+    /* زيادة حجم الخط */
+    font-weight: bold;
+    clip-path: circle(50% at 50% 50%);
+    margin-bottom: 15px;
+
+}
+
+#site-name {
+    margin-top: 10px;
+    font-size: 28px;
+    /* زيادة حجم الخط */
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+.description {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+    /* لتوسيط الأزرار */
+
+}
+
+.button-container a {
+    display: block;
+    padding: 12px 17px;
+    position: relative;
+    margin: 10px auto;
+    /* تدرج لوني */
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: 120px;
+    width: 250px;
+    align-items: center;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    /* ظل */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: radial-gradient(ellipse at bottom, rgba(71, 81, 92, 1) 0%, rgba(11, 21, 30, 1) 45%);
+    color: rgb(255, 255, 255, 0.66);
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+
+    /* مسافة أسفل الزر */
+    /* لتوسيط الزر أفقيًا */
+    padding-bottom: 10px;
+    /* تضيف مسافة داخلية في الأسفل */
+
+}
+
+.button-container a::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    opacity: 0.2;
+
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.button-container a:hover {
+    color: rgb(255, 255, 255, 1);
+    transform: scale(1.1) translateY(-3px);
+}
+
+.button-container a:hover::before {
+    opacity: 1;
+
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.language-switch {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.language-switch button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.language-switch button:hover {
+    background-color: grey;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.line {
+    width: 40%;
+    /* تحديد عرض الخط */
+    height: 0.9px;
+    background-color: #ffffff73;
+    /* لون الخط */
+    margin: 10px auto;
+    box-shadow: #bebfc589;
+    margin-top: 20px;
+}
+
+.TransLanguage {
+    gap: 20px;
+    /* مسافة بين الأزرار */
+}
+
+/* الأسلوب الافتراضي للأزرار */
+.button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bbbbbb;
+    color: #000000;
+    font-size: 14px;
+    width: 100px;
+    /* زيادة العرض لتناسب النص العربي */
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    /* منع النص من التمدد على سطرين */
+    font-family: 'Roboto', 'Tajawal', sans-serif;
+    /* تأكد من استخدام نفس الخط للنصين */
+}
+
+.button:hover {
+    background-color: #6a6a6a;
+}
+
+.element {
+    display: block;
+}
+
+.wrapper {
+    --font-color-dark: #bebfc5;
+    --font-color-light: #bebfc5;
+    --bg-color: #212121;
+    --main-color: #0c0c0c;
+    --secondary-color: #141414;
+    position: relative;
+    width: 170px;
+    height: 36px;
+    /*background-color: var(--bg-color);*/
+    border: 2px solid var(--main-color);
+    border-radius: 34px;
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    
+  
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    width: 80px;
+    height: 28px;
+    position: relative;
+    border-radius: 34px;
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+    border: #2c2c2c;
+    
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    appearance: none;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: var(--bg-color);
+}
+.span{
+    color: var(--font-color-dark);
+}
+
+
+.input:checked+.btn {
+    background-color: var(--main-color)
+}
+.input:checked + .btn .span{
+    color: var(--font-color-light);
+}
+
+span {
+    color: #72a2d2;
+}
+
+/* تحسين التخطيط لشاشات أصغر */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.65rem;
+        /* تقليل حجم الخط أكثر على الأجهزة الصغيرة */
+    }
+
+    th,
+    td {
+        padding: 4px;
+    }
+
+    button {
+        padding: 6px 10px;
+        font-size: 0.65rem;
+    }
+}
+
+/* تحسين التخطيط لشاشات الهواتف الصغيرة */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+        /* تقليل الحواف حول الصفحة */
+    }
+
+    table {
+        font-size: 0.6rem;
+        /* تقليل حجم الخط بشكل أكبر */
+    }
+
+    th,
+    td {
+        padding: 3px;
+        /* تقليل حجم الحواف أكثر */
+    }
+
+    button {
+        padding: 5px 8px;
+        font-size: 0.6rem;
+    }
+}
+</style>
+
+
+
+</html>
